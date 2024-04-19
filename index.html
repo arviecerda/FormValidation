@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="./Quiz.css">
+    <script src="https://kit.fontawesome.com/999d772d9e.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <form action="">
+                <div class="input-group">
+                    <label for="">Fullname :</label>
+                    <input type="text" placeholder="Enter your Name" id="contact-name" onkeyup="validateName()" required>
+                    <span id="name-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="">Phone No. :</label>
+                    <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()" maxlength="11">
+                    <span id="phone-error"></span>
+                </div>
+
+                
+                <div class="input-group">
+                    <label for="">Email Id:</label>
+                    <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="">Your Message :</label>
+                    <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"</span>
+                </div>
+                
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error" style="margin-right: 200px;"></span>
+
+                
+                
+        </form>
+    </div>
+
+    <script src="./Quiz.js"></script>
+</body>
+</html>
